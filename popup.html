@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-row">
+        <h1><span class="accent">//</span> Defer</h1>
+      </div>
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-value" id="stat-total">0</span>
+          <span class="stat-label">Parked</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value" id="stat-today">0</span>
+          <span class="stat-label">Today</span>
+        </div>
+      </div>
+    </header>
+
+    <nav id="tabs"></nav>
+
+    <div id="toolbar">
+      <label class="select-label">
+        <input type="checkbox" id="select-all">
+        <span>Select All</span>
+      </label>
+      <button id="open-selected" class="btn-primary" disabled>Open Selected</button>
+    </div>
+
+    <div class="list-container">
+      <ul id="link-list"></ul>
+    </div>
+
+    <footer>
+      <label>Default group
+        <select id="default-group">
+          <option value="Uncategorized">Uncategorized</option>
+          <option value="Research">Research</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Reading">Reading</option>
+          <option value="Jobs">Jobs</option>
+        </select>
+      </label>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
