@@ -1,65 +1,81 @@
-Defer: Link Parking for Power Users
+# Defer: Link Parking for Power Users
 
-You don't have a tab problem. You have a memory problem.
+> You don't have a tab problem. You have a memory problem.
 
 Defer lets you save links for later without opening them. Right-click any link, click Park for Later. No new tab, no RAM hit, no interruption to your flow.
-Show Image
 
-The Problem
+![Defer Extension](https://github.com/harshitshuklaa9/Defer-Links/blob/main/icons/icon128.png)
+
+---
+
+## The Problem
+
 Every tab you keep open is a thought you don't want to lose.
 
-Bookmarks: too permanent, never revisited
-Tab groups: still clutter, still eating memory
-Pocket: feels like homework, adds guilt
+- **Bookmarks**: too permanent, never revisited
+- **Tab groups**: still clutter, still eating memory
+- **Pocket**: feels like homework, adds guilt
 
-None of them solve the real behavior: "I want to save this link, close the tab, and come back on my own terms."
+None of them solve the real behavior: *"I want to save this link, close the tab, and come back on my own terms."*
 
-The Solution
+---
+
+## The Solution
+
 Defer is a parking lot for links. Temporary. Lightweight. Gone when you're done.
 
-Features
+---
 
-Right-click to park: save any link without opening it
-Side panel UI: clean, always accessible, never in the way
-Smart groups: organize into Research, Shopping, Reading, Jobs, Uncategorized
-Batch open: select multiple links and open them all at once
-Stats: see how many links you've parked today
-Delete instantly: clean up links you no longer need
-100% local: no account, no servers, no data leaves your browser
+## Features
 
+- **Right-click to park**: save any link without opening it
+- **Side panel UI**: clean, always accessible, never in the way
+- **Smart groups**: organize into Research, Shopping, Reading, Jobs, Uncategorized
+- **Batch open**: select multiple links and open them all at once
+- **Stats**: see how many links you've parked today
+- **Delete instantly**: clean up links you no longer need
+- **100% local**: no account, no servers, no data leaves your browser
 
-Installation
-From Chrome Web Store
+---
+
+## Installation
+
+### From Chrome Web Store
 (Review pending, link coming soon)
-Load Locally (Developer Mode)
 
-Clone this repo or download the ZIP
-Go to chrome://extensions
-Toggle Developer mode ON (top right)
-Click Load unpacked
-Select the defer folder
-The Defer icon appears in your toolbar
+### Load Locally (Developer Mode)
+1. Clone this repo or download the ZIP
+2. Go to `chrome://extensions`
+3. Toggle **Developer mode** ON (top right)
+4. Click **Load unpacked**
+5. Select the `defer` folder
+6. The Defer icon appears in your toolbar
 
+---
 
-How to Use
+## How to Use
 
-Browse any website
-Right-click any link you want to revisit later
-Select "Park for Later"
-Click the Defer icon in your toolbar to see all parked links
-Open individually or batch-open with Open Selected
+1. Browse any website
+2. Right-click any link you want to revisit later
+3. Select **"Park for Later"**
+4. Click the Defer icon in your toolbar to see all parked links
+5. Open individually or batch-open with **Open Selected**
 
+---
 
-Tech Stack
+## Tech Stack
 
-Chrome Manifest V3
-Vanilla HTML, CSS, JavaScript , no frameworks, no bundlers
-chrome.storage.local , all data stored locally on device
-chrome.contextMenus , right-click integration
-chrome.sidePanel , persistent side panel UI
+- Chrome Manifest V3
+- Vanilla HTML, CSS, JavaScript , no frameworks, no bundlers
+- `chrome.storage.local` , all data stored locally on device
+- `chrome.contextMenus` , right-click integration
+- `chrome.sidePanel` , persistent side panel UI
 
+---
 
-Project Structure
+## Project Structure
+
+```
 defer/
 ├── manifest.json        # Extension config and permissions
 ├── background.js        # Service worker, context menu logic
@@ -71,26 +87,43 @@ defer/
 ├── popup.js             # All UI logic, storage interactions
 ├── icons/               # Extension icons
 └── fonts/               # Local fonts
+```
 
-Privacy
+---
+
+## Privacy
+
 Defer collects zero user data. Everything stays on your device.
-No analytics. No tracking. No accounts. No servers.
-Full Privacy Policy
 
-The Story
+No analytics. No tracking. No accounts. No servers.
+
+[Full Privacy Policy](https://github.com/harshitshuklaa9/Defer-Links/blob/main/PRIVACY.md)
+
+---
+
+## The Story
+
 Built in one weekend using Claude Code. I'm a PM. I don't write code. I described the problem, defined the behavior, and iterated on the UX. Claude wrote the code.
+
 What I learned: the bottleneck was never the code. It was knowing exactly what to build and what to cut. That's a PM skill.
 
-Roadmap
+---
 
- AI auto-categorization , automatically sort links into the right group
- Link summarization , one-line AI summary of each parked link
- Duplicate detection , flag links you've already parked
- Keyboard shortcut to open panel
+## Roadmap
 
+- [ ] AI auto-categorization , automatically sort links into the right group
+- [ ] Link summarization , one-line AI summary of each parked link
+- [ ] Duplicate detection , flag links you've already parked
+- [ ] Keyboard shortcut to open panel
 
-Author
-Harshit Shukla | AI Product Manager | HealthTech | Revenue Systems
-LinkedIn · GitHub
+---
 
-If you have 40+ tabs open right now, this was built for you.
+## Author
+
+**Harshit Shukla**
+
+[LinkedIn](https://linkedin.com/in/harshitshukla6)
+
+---
+
+*If you have 40+ tabs open right now, this was built for you.*
