@@ -4,7 +4,6 @@
 
 Defer lets you save links for later without opening them. Right-click any link, click Park for Later. No new tab, no RAM hit, no interruption to your flow.
 
-![Defer Extension](https://github.com/harshitshuklaa9/Defer-Links/blob/main/icons/icon128.png)
 
 ---
 
